@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
-namespace user.api.Controllers;
+namespace asset.api.Controllers;
 
 [Route("api/assets")]
 public class AssetController : ControllerBase
