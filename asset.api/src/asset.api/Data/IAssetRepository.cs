@@ -4,7 +4,9 @@ namespace asset.api.Repositories;
 
 public interface IAssetRepository
 {
-    Task<bool> InsertAsync(Asset entity);
-
+    Task<Asset> GetByIdAsync(Guid id);
     Task<List<Asset>> GetListAsync();
+    Task<bool> InsertAsync(Asset entity);
+    Task<bool> UpdateAsync(Asset entity);
+    Task<bool> SoftDeleteAsync(Guid id);
 }

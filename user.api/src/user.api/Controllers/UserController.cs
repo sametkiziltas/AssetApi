@@ -28,7 +28,7 @@ public class UserController : ControllerBase
         {
             new ResponseUser
             {
-                Id = Guid.NewGuid(),
+                Id = new Guid("3c177241-9484-4956-a604-99b166fbd443"),
                 FirstName = "Samet",
                 LastName = "Kızıltaş",
                 Email = "samet-kiziltas@outlook.com",

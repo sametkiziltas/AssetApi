@@ -14,7 +14,7 @@ public class BaseResponse<T> where T : new()
 
     public T Data { get; set; }
 
-    public long Total { get; set; }
+    public long Total { get; set; } 
 
     public BaseResponse<T> SetData(T data)
     {
@@ -25,6 +25,11 @@ public class BaseResponse<T> where T : new()
     public BaseResponse<T> SetError(string errorMessage)
     {
         Errors.Add(errorMessage);
+        return this;
+    }    
+    public BaseResponse<T> SetError(List<string> errors)
+    {
+        Errors = Errors;
         return this;
     }
 }
